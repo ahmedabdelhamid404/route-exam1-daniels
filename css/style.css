@@ -1,0 +1,430 @@
+/* Root */
+:root {
+  --main-color: #343434;
+  --secondary-color: #f8f9fa;
+  --teritary-color: #1c1c1c;
+}
+
+/* my reboot */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+i {
+  display: inline-flex !important;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* my utilities */
+
+/* general utilities */
+.py-100 {
+  padding-block: 6.25rem;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fs-7 {
+  font-size: 0.875rem;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+.bg-brown {
+  background-color: var(--teritary-color) !important;
+}
+
+.w-90px {
+  width: 90px;
+}
+
+/* overwrite bootstrap variables values in btn class */
+.btn {
+  --bs-btn-padding-x: 1.875rem;
+  --bs-btn-padding-y: 0.625rem;
+  --bs-btn-box-shadow: none;
+  --bs-btn-focus-box-shadow: none;
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 300;
+  --bs-btn-border-radius: 0.25rem;
+}
+
+.btn-dark {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #212529;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: #212529;
+  --bs-btn-hover-color: #212529;
+  --bs-btn-hover-bg: #fff;
+}
+
+/* home utilities */
+
+/* for the h1 responsive view */
+.display-0 {
+  font-size: clamp(1.875rem, calc(1.575rem + 3.9vw), 3.75rem);
+}
+
+/* General Styling */
+section .title h2 {
+  position: relative;
+  z-index: 0;
+  width: fit-content;
+}
+
+section .title h2::after {
+  content: "";
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 30px;
+  background-image: url(../images/dots.png);
+  position: absolute;
+  z-index: -1;
+}
+
+/* Start Navbar Section */
+.navbar .navbar-toggler {
+  border: 0;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active {
+  font-weight: 100;
+  font-size: 0.875rem;
+  position: relative;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* End Navbar Section */
+
+/* Start Home Section */
+header.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home .typing {
+  display: flex;
+}
+.home .typing::after {
+  content: "";
+  order: 1;
+  animation: typing 8s ease-in-out infinite;
+}
+
+.home .typing::before {
+  content: "|";
+  order: 2;
+  font-weight: 100;
+}
+
+.home .social-links i {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* End Home Section */
+
+/* Start About Section */
+.about .container picture {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about .container picture::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/dots.png);
+  width: 80%;
+  height: 80%;
+  bottom: -30px;
+  left: 0px;
+  z-index: -1;
+}
+
+.about .container .about-content p {
+  line-height: 1.5625rem;
+}
+
+.about .container .about-progress .progress {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2) inset;
+  height: 24px;
+  background-color: #fff;
+  font-size: 0.875rem;
+}
+
+.about .container .progress-bar {
+  background-color: var(--teritary-color) !important;
+}
+
+/* End About Section */
+
+/* Start Services Section */
+.services-content .item i {
+  width: 70px;
+  height: 70px;
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.services-content .item:hover i {
+  background-color: #000;
+  color: #fff;
+}
+
+/* End Services Section */
+
+/* Start Portfolio Section */
+.nav-pills .nav-link,
+.nav-pills .nav-link.active {
+  color: #000;
+  font-weight: 800;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+}
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.portfolio-content .tab-content .tab-pane picture .layer i {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.portfolio-content .tab-content .tab-pane picture .layer i:hover {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.portfolio-content .tab-content .tab-pane picture {
+  position: relative;
+}
+
+.portfolio-content .tab-content .tab-pane picture .layer {
+  position: absolute;
+  bottom: -10px;
+  top: 15px;
+  left: 5px;
+  right: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--secondary-color);
+  opacity: 0;
+  transition: top 0.5s ease-in-out, bottom 0.5s ease-in-out,
+    gap 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.portfolio-content .tab-content .tab-pane picture:hover .layer {
+  top: 5px;
+  bottom: 5px;
+  gap: 4px;
+  opacity: 1;
+}
+
+/* Modal Part */
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-header {
+  border: none;
+}
+
+/* End Portfolio Section */
+
+/* Start Testimonials Section */
+.carousel .carousel-inner {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+}
+
+.carousel .carousel-indicators button.active,
+.carousel .carousel-indicators button:hover {
+  background-color: #869791;
+}
+
+/* End Testimonials Section */
+
+/* Start Team Section */
+
+.item picture .layer i {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.item picture .layer a:hover i {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.item picture .layer {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  scale: 0.5;
+  transform: rotateY(180deg);
+  transition: scale 0.5s ease-in-out, transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.item:hover picture .layer {
+  scale: 1;
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.item picture img {
+  transition: scale 0.5s ease-in-out;
+}
+
+.item:hover picture img {
+  scale: 1.2;
+}
+
+.item .item-text {
+  background-color: #5b5b5b;
+  padding: 25px;
+}
+
+/* End Team Section */
+
+/* Start Contact Services */
+.contact-info i {
+  font-size: 1.5625rem;
+  width: 60px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.contact-info i:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact .form-control {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.contact .form-control:focus {
+  box-shadow: none;
+}
+
+.contact textarea {
+  max-height: 250px;
+  min-height: 180px;
+}
+
+.contact input,
+.contact textarea {
+  padding-block: 10px !important;
+}
+
+/* End Contact Services */
+
+/* Start Footer Section */

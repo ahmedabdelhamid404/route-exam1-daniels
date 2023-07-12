@@ -1,0 +1,241 @@
+@keyframes typing {
+  0% {
+    content: "";
+  }
+
+  0.77% {
+    content: "L";
+  }
+
+  1.54% {
+    content: "La";
+  }
+
+  2.31% {
+    content: "Lar";
+  }
+
+  3.08% {
+    content: "Larr";
+  }
+
+  3.85% {
+    content: "Larry";
+  }
+
+  4.62% {
+    content: "Larry ";
+  }
+
+  5.39% {
+    content: "Larry D";
+  }
+
+  6.16% {
+    content: "Larry Da";
+  }
+
+  6.92% {
+    content: "Larry Dan";
+  }
+
+  7.7% {
+    content: "Larry Dani";
+  }
+
+  8.47% {
+    content: "Larry Danie";
+  }
+
+  9.23% {
+    content: "Larry Daniel";
+  }
+
+  10% {
+    content: "Larry Daniels";
+  }
+
+  11%, 23.333% {
+    content: "Larry Daniels";
+  }
+
+  24.1% {
+    content: "Larry Daniel";
+  }
+
+  24.87% {
+    content: "Larry Danie";
+  }
+
+  25.64% {
+    content: "Larry Dani";
+  }
+
+  26.41% {
+    content: "Larry Dan";
+  }
+
+  27.18% {
+    content: "Larry Da";
+  }
+
+  27.95% {
+    content: "Larry D";
+  }
+
+  28.72% {
+    content: "Larry ";
+  }
+
+  29.49% {
+    content: "Larry";
+  }
+
+  30.26% {
+    content: "Larr";
+  }
+
+  31.03% {
+    content: "Lar";
+  }
+
+  31.8% {
+    content: "La";
+  }
+
+  32.57% {
+    content: "L";
+  }
+
+  33.33% {
+    content: "";
+  }
+
+  34.33% {
+    content: "D";
+  }
+
+  35.33% {
+    content: "De";
+  }
+
+  36.33% {
+    content: "Dev";
+  }
+
+  37.33% {
+    content: "Deve";
+  }
+
+  38.33% {
+    content: "Devel";
+  }
+
+  39.33% {
+    content: "Develo";
+  }
+
+  40.33% {
+    content: "Develop";
+  }
+
+  41.33% {
+    content: "Develope";
+  }
+
+  42.33% {
+    content: "Developer";
+  }
+
+  43.33%, 57.66% {
+    content: "Developer";
+  }
+
+  58.66% {
+    content: "Develope";
+  }
+
+  59.66% {
+    content: "Develop";
+  }
+
+  60.66% {
+    content: "Develo";
+  }
+
+  61.66% {
+    content: "Devel";
+  }
+
+  62.66% {
+    content: "Deve";
+  }
+
+  63.66% {
+    content: "Dev";
+  }
+
+  64.66% {
+    content: "De";
+  }
+
+  65.66% {
+    content: "D";
+  }
+
+  66.66% {
+    content: "";
+  }
+
+  67.66% {
+    content: "D";
+  }
+  68.66% {
+    content: "De";
+  }
+  69.66% {
+    content: "Des";
+  }
+  70.66% {
+    content: "Desi";
+  }
+  71.66% {
+    content: "Desig";
+  }
+  72.66% {
+    content: "Design";
+  }
+  73.66% {
+    content: "Designe";
+  }
+  74.66% {
+    content: "Designer";
+  }
+  75.66%, 92% {
+    content: "Designer";
+  }
+  93% {
+    content: "Designe";
+  }
+  94% {
+    content: "Design";
+  }
+  95% {
+    content: "Desig";
+  }
+  96% {
+    content: "Desi";
+  }
+  97% {
+    content: "Des";
+  }
+  98% {
+    content: "De";
+  }
+  99% {
+    content: "D";
+  }
+  100% {
+    content: "";
+  }
+}
